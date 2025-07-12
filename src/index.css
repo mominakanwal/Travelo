@@ -1,0 +1,53 @@
+:root {
+  /* Sea Green Color Palette */
+  --sea-deep: #0a4b4d;
+  --sea-medium: #2a7a7b;
+  --sea-light: #4aa8a9;
+  --sea-foam: #8fd8d5;
+  --sea-mist: #d1f0f0;
+
+  /* Complementary Colors */
+  --coral: #ff7f66;
+  --sand: #f5d6ab;
+  --sunset: #ffb347;
+  --navy: #1a3a6a;
+
+  /* Neutrals */
+  --ivory: #fffff0;
+  --charcoal: #333333;
+
+  --gradient-sea: linear-gradient(
+    135deg,
+    var(--sea-medium) 0%,
+    var(--sea-light) 100%
+  );
+  --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 10px 15px rgba(0, 0, 0, 0.15);
+  --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: var(--charcoal);
+  background-color: var(--ivory);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection styling */
+::selection {
+  background-color: var(--sea-light);
+  color: white;
+}
