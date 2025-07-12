@@ -15,9 +15,10 @@
   "devDependencies": {
     "@types/react": "19.0.0",
     "@types/react-dom": "19.0.0",
-    "@types/react-router-dom": "7.6.0",
+    "@types/react-router-dom": "7.6.3",  // Updated version
     "typescript": "4.9.5",
-    "loader-utils": "3.2.1"
+    "loader-utils": "3.2.1",
+    "@typescript-eslint/parser": "^7.3.1"  // Added for ESLint
   },
   "scripts": {
     "start": "react-scripts start",
@@ -27,7 +28,8 @@
     "lint": "eslint src --ext js,jsx,ts,tsx"
   },
   "eslintConfig": {
-    "extends": ["react-app", "react-app/jest"]
+    "extends": ["react-app", "react-app/jest"],
+    "parser": "@typescript-eslint/parser"  // Moved from .eslintrc.json
   },
   "browserslist": {
     "production": [">0.2%", "not dead", "not op_mini all"],
